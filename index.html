@@ -1149,7 +1149,7 @@
         };
 
         // ================= SHARE APP & COPY LINK FUNCTIONS =================
-        const getShareText = () => `🔥 Join BrandPulse App & earn money by doing paid Instagram & YouTube brand promotions! Join using my link: https://brandpulse.web.app/?ref=${window.currentUser.creatorId || 'BP'}`;
+        const getShareText = () => `🔥 Join BrandPulse App & earn money by doing paid Instagram & YouTube brand promotions! Join using my link: https://pramotionfree-wq.github.io/Pramotion/?ref=${window.currentUser.creatorId || 'BP'}`;
 
         window.copyReferralLink = function() {
             const input = document.getElementById('referralLinkInput');
@@ -1164,7 +1164,7 @@
         };
 
         window.openShareModal = function() {
-            document.getElementById('modalShareLinkInput').value = `https://brandpulse.web.app/?ref=${window.currentUser.creatorId || 'BP'}`;
+            document.getElementById('modalShareLinkInput').value = `https://pramotionfree-wq.github.io/Pramotion/?ref=${window.currentUser.creatorId || 'BP'}`;
             document.getElementById('shareModal').classList.remove('hidden');
         };
 
@@ -1175,7 +1175,7 @@
 
         window.shareViaTelegram = function() {
             const text = encodeURIComponent(getShareText());
-            window.open(`https://t.me/share/url?url=https://brandpulse.web.app&text=${text}`, '_blank');
+            window.open(`https://t.me/share/url?url=https://pramotionfree-wq.github.io/Pramotion/&text=${text}`, '_blank');
         };
 
         window.nativeDeviceShare = function() {
@@ -1183,7 +1183,7 @@
                 navigator.share({
                     title: 'BrandPulse - Paid Promotions',
                     text: 'Earn money with Instagram & YouTube brand campaigns!',
-                    url: 'https://brandpulse.web.app',
+                    url: 'https://pramotionfree-wq.github.io/Pramotion/',
                 }).catch(() => {});
             } else {
                 copyModalShareLink();
