@@ -405,7 +405,7 @@
                     </div>
 
                     <div class="flex items-center space-x-2 bg-darkbg p-2 rounded-xl border border-white/10">
-                        <input type="text" id="referralLinkInput" readonly value="https://pramotionfree-wq.github.io/Pramotion/" class="w-full bg-transparent text-[11px] text-gray-300 px-2 focus:outline-none">
+                        <input type="text" id="referralLinkInput" readonly value="https://pramotionfree-wq.github.io/BRAND-PULSE-/" class="w-full bg-transparent text-[11px] text-gray-300 px-2 focus:outline-none">
                         <button onclick="copyReferralLink()" class="bg-neonorange hover:bg-orange-600 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition shrink-0 flex items-center space-x-1">
                             <i class="fa-solid fa-copy text-[10px]"></i> <span>Copy</span>
                         </button>
@@ -1164,7 +1164,7 @@
         };
 
         window.openShareModal = function() {
-            document.getElementById('modalShareLinkInput').value = `https://pramotionfree-wq.github.io/Pramotion/?ref=${window.currentUser.creatorId || 'BP'}`;
+            document.getElementById('modalShareLinkInput').value = `https://pramotionfree-wq.github.io/BRAND-PULSE-/?ref=${window.currentUser.creatorId || 'BP'}`;
             document.getElementById('shareModal').classList.remove('hidden');
         };
 
@@ -1175,7 +1175,7 @@
 
         window.shareViaTelegram = function() {
             const text = encodeURIComponent(getShareText());
-            window.open(`https://t.me/share/url?url=https://pramotionfree-wq.github.io/Pramotion/&text=${text}`, '_blank');
+            window.open(`https://t.me/share/url?url=https://pramotionfree-wq.github.io/BRAND-PULSE-/&text=${text}`, '_blank');
         };
 
         window.nativeDeviceShare = function() {
@@ -1183,7 +1183,7 @@
                 navigator.share({
                     title: 'BrandPulse - Paid Promotions',
                     text: 'Earn money with Instagram & YouTube brand campaigns!',
-                    url: 'https://pramotionfree-wq.github.io/Pramotion/',
+                    url: 'https://pramotionfree-wq.github.io/BRAND-PULSE-/',
                 }).catch(() => {});
             } else {
                 copyModalShareLink();
